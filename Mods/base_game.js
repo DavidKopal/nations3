@@ -2,7 +2,7 @@ const basegame = {
     descriptor: {
         Mod: "Base",
         Author: "DKopal",
-        Description: "The base cultures, countries, governments and localisation for the game."
+        Description: "The base cultures, countries, governments, and localisation for the game."
     },
     traits: {
         high_gdp_limit: {
@@ -40,7 +40,7 @@ const basegame = {
             base_production: 3,
             base_taxes: 1,
             base_mil: 2,
-            commoners: ["Kowal", "Mlynarz", "Rybak", "Chlebek", "Stolar", "Piekarz"], // smith, miller, fisher, bread, carpenter, baker
+            commoners: ["Kowal", "Mlynarz", "Rybak", "Chlebek", "Stolar", "Piekarz"],
         },
         germanic: {
             names: ["Johan", "Sigurd", "Freydis", "Baldric"],
@@ -48,7 +48,7 @@ const basegame = {
             base_production: 1,
             base_taxes: 3,
             base_mil: 3,
-            commoners: ["Schmidt", "Müller", "Bauer", "Koch", "Fischer", "Schneider"], // smith, miller, farmer, cook, fisher, tailor
+            commoners: ["Schmidt", "Müller", "Bauer", "Koch", "Fischer", "Schneider"],
         },
         anglo: {
             names: ["David", "John", "Thomas", "Maria"],
@@ -56,7 +56,7 @@ const basegame = {
             base_production: 2,
             base_taxes: 3,
             base_mil: 2,
-            commoners: ["Smith", "Carter", "Cooper", "Taylor", "Miller", "Baker"], // standard English surnames already fixed by 1400s
+            commoners: ["Smith", "Carter", "Cooper", "Taylor", "Miller", "Baker"],
         },
         hunnic: {
             names: ["Attila", "Bleda", "Ruga", "Csaba"],
@@ -64,7 +64,7 @@ const basegame = {
             base_production: 1,
             base_taxes: 1,
             base_mil: 4,
-            commoners: ["Nagy", "Kovács", "Szabo", "Molnár", "Horváth", "Farkas"], // big, smith, tailor, miller, Croat, wolf
+            commoners: ["Nagy", "Kovács", "Szabo", "Molnár", "Horváth", "Farkas"],
         },
         french: {
             names: ["Louis", "Charles", "Jean", "Philippe"],
@@ -72,7 +72,7 @@ const basegame = {
             base_production: 1,
             base_taxes: 3,
             base_mil: 2,
-            commoners: ["Martin", "Petit", "Durand", "Moreau", "Lefèvre", "Bernard"], // very common medieval French surnames
+            commoners: ["Martin", "Petit", "Durand", "Moreau", "Lefèvre", "Bernard"],
         },
         iberian: {
             names: ["Fernando", "Isabel", "Juan", "Maria"],
@@ -80,7 +80,7 @@ const basegame = {
             base_production: 2,
             base_taxes: 3,
             base_mil: 2,
-            commoners: ["García", "Fernández", "López", "Martínez", "Pérez", "Sánchez"], // patronymics dominant in 1444
+            commoners: ["García", "Fernández", "López", "Martínez", "Pérez", "Sánchez"],
         },
         italian: {
             names: ["Lorenzo", "Giovanni", "Francesca", "Lucrezia"],
@@ -88,7 +88,7 @@ const basegame = {
             base_production: 3,
             base_taxes: 2,
             base_mil: 2,
-            commoners: ["Rossi", "Bianchi", "Grasso", "Ferrari", "Colombo", "Conti"], // colors, trades, simple identifiers
+            commoners: ["Rossi", "Bianchi", "Grasso", "Ferrari", "Colombo", "Conti"],
         },
         nordic: {
             names: ["Erik", "Knut", "Astrid", "Ingrid"],
@@ -96,7 +96,7 @@ const basegame = {
             base_production: 1,
             base_taxes: 1,
             base_mil: 3,
-            commoners: ["Eriksson", "Olafsson", "Andersson", "Sigurdsson", "Magnusdottir", "Torvaldsson"], // patronymics dominant
+            commoners: ["Eriksson", "Olafsson", "Andersson", "Sigurdsson", "Magnusdottir", "Torvaldsson"],
         },
         turkic: {
             names: ["Osman", "Mehmet", "Selim", "Fatma"],
@@ -104,7 +104,7 @@ const basegame = {
             base_production: 3,
             base_taxes: 1,
             base_mil: 3,
-            commoners: ["Demirci", "Kaya", "Çoban", "Yazici", "Aksakal", "Topal"], // smith, rock, shepherd, scribe, elder, lame (common descriptive names)
+            commoners: ["Demirci", "Kaya", "Çoban", "Yazici", "Aksakal", "Topal"],
         },
         arabic: {
             names: ["Ahmad", "Yusuf", "Fatima", "Aisha"],
@@ -112,7 +112,7 @@ const basegame = {
             base_production: 2,
             base_taxes: 1,
             base_mil: 4,
-            commoners: ["Al-Haddad", "Al-Najjar", "Al-Tahir", "Al-Sayeed", "Al-Rumi", "Ibn-Salim"], // smith, carpenter, pure, lord, foreigner, son of Salim
+            commoners: ["Al-Haddad", "Al-Najjar", "Al-Tahir", "Al-Sayeed", "Al-Rumi", "Ibn-Salim"],
         },
     },
     nations: {
@@ -373,5 +373,6 @@ const basegame = {
         military_leader: "Military Leader",
     }
 }
+
 
 RunningGame.LoadMod(basegame)
