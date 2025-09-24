@@ -1,0 +1,152 @@
+html, body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fafafa;
+    color: #222;
+    line-height: 1.5;
+}
+
+#topbar {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0.75rem 1rem;
+    border-bottom: 2px solid #333;
+    font-weight: 600;
+    background: #f5f5f5;
+}
+
+#paused {
+    color: #c62828;
+    font-weight: bold;
+}
+
+.yellow {
+    color: rgb(175, 151, 12);
+}
+
+.green {
+    color: rgb(50, 167, 4);
+}
+
+.white {
+    color: white
+}
+
+#nations-object {
+    max-width: 900px;
+    margin: 2rem auto;
+    min-height: 150px;
+    border-top: 0.2vw solid #000;
+}
+
+.nation-line {
+    margin: 0;
+    padding: 0.vh 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.75vp;    
+    border-bottom: 0.2vw solid #000;
+    background: #fff;
+    text-shadow: 0.1vh 0.1vh 0 #222; 
+    border-left: 0.2vw solid #000;
+    border-right: 0.2vw solid #000;
+}
+
+#info {
+    max-width: 600px;
+    margin: 1.5rem auto;
+    padding: 1rem 1.25rem;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    background: #fff;
+}
+
+#info p {
+    margin: 0.4rem 0;
+}
+
+#event-box {
+    max-width: 600px;
+    margin: 1rem auto 2rem;
+    padding: 0.75rem;
+    border-left: 3px solid #4caf50;
+    background: #fff;
+    border-radius: 4px;
+}
+
+#event {
+    margin: 0;
+    font-style: italic;
+    text-align: center;
+    color: #333;
+}
+
+#mod-toggle {
+    margin-left: 1vw;
+    padding: 0.5vh 1vw;
+    font-size: 1.8vh;
+    cursor: pointer;
+    background: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 0.5vh;
+}
+
+#mod-loader {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    height: 40vh;
+    background: #fff;
+    border: 0.3vw solid #333;
+    border-radius: 1vh;
+    padding: 1vh 1vw;
+    box-shadow: 0 0 1vh rgba(0,0,0,0.3);
+    overflow-y: auto;
+    z-index: 100;
+}
+
+#mod-loader.hidden {
+    display: none;
+}
+
+#mod-loader h2 {
+    margin-top: 0;
+    font-size: 2.5vh;
+    text-align: center;
+}
+
+#mod-list {
+    list-style: none;
+    padding: 0;
+    margin: 1vh 0;
+    max-height: calc(100% - 6vh);
+    overflow-y: auto;
+}
+
+#mod-list .mod-li {
+    padding: 1vh 1vw;
+    border-bottom: 0.2vh solid #ccc;
+    font-weight: bold;
+    font-size: 1.8vh;
+}
+
+.mod-li {
+    cursor: pointer;
+}
+
+#mod-input {
+    width: 100%;
+    padding: 1vh 0.5vw;
+    box-sizing: border-box;
+    border: 0.2vw solid #aaa;
+    border-radius: 0.5vh;
+    font-size: 1.8vh;
+    position: absolute;
+    bottom: 1vh;
+    left: 1vw;
+}

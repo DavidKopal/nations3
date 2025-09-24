@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Wolfram's Nations</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+</head>
+
+<body onkeypress="KeyHandler.Handling(event)">
+    <p id="pressspace" style="font-weight: bolder; text-align: center; font-size: 3vh;">PRESS SPACE TO BEGIN</p>
+
+    <header id="topbar">
+        <span id="year">Year: 1000</span>
+        <span id="paused" style="display: none;">PAUSED</span>
+        <button id="mod-toggle" onclick="ModLoader.toggle()">Mods</button>
+    </header>
+
+    <p id="event">Recent event: Null</p>
+
+    <main>
+        <section id="nations-object"></section>
+        <section id="info">
+            <p id="info-tag">TAG: Null</p>
+            <p id="info-name">Name: Null</p>
+            <p id="info-fname">Full Name: Null of Null</p>
+            <p id="info-ruler">Ruler: Null</p>
+            <div id="info-rtraits">
+            </div>
+            <p id="info-gov">Government: Null</p>
+            <p id="info-agg">Aggresion: Null</p>
+            <p id="info-next">Next election: Null</p>
+        </section>
+    </main>
+
+    <div id="mod-loader" class="hidden">
+        <h2>Mods</h2>
+        <ul id="mod-list"></ul>
+        <input type="text" id="mod-input" placeholder="Add a mod..." onkeydown="ModLoader.add(event)">
+    </div>
+
+</body>
+</html>
